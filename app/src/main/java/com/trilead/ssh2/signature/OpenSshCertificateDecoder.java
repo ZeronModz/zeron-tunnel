@@ -124,6 +124,7 @@ abstract class OpenSshCertificateDecoder extends CertificateDecoder {
         private final int blockSize;
         private final int keyLength;
         private final String[] sshCipherNames;
+        private final String enumName;
         public static final SshCipher DESEDE_CBC = new AnonymousClass1(new String[0]);
         public static final SshCipher DES_CBC = new AnonymousClass2(new String[0]);
         public static final SshCipher AES128_CBC = new AnonymousClass3(new String[]{"aes128-cbc"});
@@ -136,7 +137,8 @@ abstract class OpenSshCertificateDecoder extends CertificateDecoder {
             return new SshCipher[]{DESEDE_CBC, DES_CBC, AES128_CBC, AES192_CBC, AES256_CBC, AES256_CTR};
         }
 
-        private SshCipher(String str, int i, int i2, int i3, String str2, String... strArr) {
+        private SshCipher(String str, int i, int i2, int i3, String str2, String[] strArr, int i4) {
+            this.enumName = str;
             this.keyLength = i2;
             this.blockSize = i3;
             String[] strArr2 = new String[(strArr == null ? 0 : strArr.length) + 1];
@@ -160,7 +162,12 @@ abstract class OpenSshCertificateDecoder extends CertificateDecoder {
         }
 
         public static SshCipher valueOf(String str) {
-            return (SshCipher) Enum.valueOf(SshCipher.class, str);
+            for (SshCipher sshCipher : values()) {
+                if (sshCipher.enumName.equals(str)) {
+                    return sshCipher;
+                }
+            }
+            throw new IllegalArgumentException(str);
         }
 
         public static SshCipher[] values() {
@@ -179,7 +186,7 @@ abstract class OpenSshCertificateDecoder extends CertificateDecoder {
 
         /* JADX INFO: renamed from: com.trilead.ssh2.signature.OpenSshCertificateDecoder$SshCipher$1, reason: invalid class name */
         /* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-        public enum AnonymousClass1 extends SshCipher {
+        public static final class AnonymousClass1 extends SshCipher {
             public /* synthetic */ AnonymousClass1(String[] strArr) {
                 this("DESEDE_CBC", 0, 24, 8, "des-ede3-cbc", strArr);
             }
@@ -196,7 +203,7 @@ abstract class OpenSshCertificateDecoder extends CertificateDecoder {
 
         /* JADX INFO: renamed from: com.trilead.ssh2.signature.OpenSshCertificateDecoder$SshCipher$2, reason: invalid class name */
         /* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-        public enum AnonymousClass2 extends SshCipher {
+        public static final class AnonymousClass2 extends SshCipher {
             public /* synthetic */ AnonymousClass2(String[] strArr) {
                 this("DES_CBC", 1, 8, 8, "des-cbc", strArr);
             }
@@ -215,7 +222,7 @@ abstract class OpenSshCertificateDecoder extends CertificateDecoder {
 
         /* JADX INFO: renamed from: com.trilead.ssh2.signature.OpenSshCertificateDecoder$SshCipher$3, reason: invalid class name */
         /* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-        public enum AnonymousClass3 extends SshCipher {
+        public static final class AnonymousClass3 extends SshCipher {
             public /* synthetic */ AnonymousClass3(String[] strArr) {
                 this("AES128_CBC", 2, 16, 16, "aes-128-cbc", strArr);
             }
@@ -232,7 +239,7 @@ abstract class OpenSshCertificateDecoder extends CertificateDecoder {
 
         /* JADX INFO: renamed from: com.trilead.ssh2.signature.OpenSshCertificateDecoder$SshCipher$4, reason: invalid class name */
         /* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-        public enum AnonymousClass4 extends SshCipher {
+        public static final class AnonymousClass4 extends SshCipher {
             public /* synthetic */ AnonymousClass4(String[] strArr) {
                 this("AES192_CBC", 3, 24, 16, "aes-192-cbc", strArr);
             }
@@ -249,7 +256,7 @@ abstract class OpenSshCertificateDecoder extends CertificateDecoder {
 
         /* JADX INFO: renamed from: com.trilead.ssh2.signature.OpenSshCertificateDecoder$SshCipher$5, reason: invalid class name */
         /* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-        public enum AnonymousClass5 extends SshCipher {
+        public static final class AnonymousClass5 extends SshCipher {
             public /* synthetic */ AnonymousClass5(String[] strArr) {
                 this("AES256_CBC", 4, 32, 16, "aes-256-cbc", strArr);
             }
@@ -266,7 +273,7 @@ abstract class OpenSshCertificateDecoder extends CertificateDecoder {
 
         /* JADX INFO: renamed from: com.trilead.ssh2.signature.OpenSshCertificateDecoder$SshCipher$6, reason: invalid class name */
         /* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-        public enum AnonymousClass6 extends SshCipher {
+        public static final class AnonymousClass6 extends SshCipher {
             public /* synthetic */ AnonymousClass6(String[] strArr) {
                 this("AES256_CTR", 5, 32, 16, "aes-256-ctr", strArr);
             }

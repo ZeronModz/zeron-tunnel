@@ -13,8 +13,8 @@ import androidx.customview.widget.ViewDragHelper$Callback;
 import java.util.Arrays;
 import java.util.WeakHashMap;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes.dex */
+ 
+ 
 public final class mn1 {
     public static final x11 x = new x11(1);
     public int a;
@@ -123,65 +123,10 @@ public final class mn1 {
         return (this.i[i] & i2) == 0 && fAbs > ((float) this.b);
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:25:0x0044 A[RETURN] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+     
+     
     public final boolean e(android.view.View r4, float r5, float r6) {
-        /*
-            r3 = this;
-            r0 = 0
-            if (r4 != 0) goto L4
-            goto L45
-        L4:
-            androidx.customview.widget.ViewDragHelper$Callback r1 = r3.s
-            int r4 = r1.c(r4)
-            r2 = 1
-            if (r4 <= 0) goto Lf
-            r4 = r2
-            goto L10
-        Lf:
-            r4 = r0
-        L10:
-            int r1 = r1.d()
-            if (r1 <= 0) goto L18
-            r1 = r2
-            goto L19
-        L18:
-            r1 = r0
-        L19:
-            if (r4 == 0) goto L29
-            if (r1 == 0) goto L29
-            float r5 = r5 * r5
-            float r6 = r6 * r6
-            float r6 = r6 + r5
-            int r3 = r3.b
-            int r3 = r3 * r3
-            float r3 = (float) r3
-            int r3 = (r6 > r3 ? 1 : (r6 == r3 ? 0 : -1))
-            if (r3 <= 0) goto L45
-            goto L44
-        L29:
-            if (r4 == 0) goto L37
-            float r4 = java.lang.Math.abs(r5)
-            int r3 = r3.b
-            float r3 = (float) r3
-            int r3 = (r4 > r3 ? 1 : (r4 == r3 ? 0 : -1))
-            if (r3 <= 0) goto L45
-            goto L44
-        L37:
-            if (r1 == 0) goto L45
-            float r4 = java.lang.Math.abs(r6)
-            int r3 = r3.b
-            float r3 = (float) r3
-            int r3 = (r4 > r3 ? 1 : (r4 == r3 ? 0 : -1))
-            if (r3 <= 0) goto L45
-        L44:
-            return r2
-        L45:
-            return r0
-        */
+         
         throw new UnsupportedOperationException("Method not decompiled: defpackage.mn1.e(android.view.View, float, float):boolean");
     }
 
@@ -497,40 +442,31 @@ public final class mn1 {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v11 */
-    /* JADX WARN: Type inference failed for: r0v12 */
-    /* JADX WARN: Type inference failed for: r0v13 */
-    /* JADX WARN: Type inference failed for: r0v14 */
-    /* JADX WARN: Type inference failed for: r0v15 */
-    /* JADX WARN: Type inference failed for: r0v16 */
-    /* JADX WARN: Type inference failed for: r0v2 */
-    /* JADX WARN: Type inference failed for: r0v3 */
-    /* JADX WARN: Type inference failed for: r0v4, types: [int] */
-    /* JADX WARN: Type inference failed for: r2v1, types: [androidx.customview.widget.ViewDragHelper$Callback] */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:593)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-     */
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
     public final void n(float f, float f2, int i) {
         boolean zD = d(f, f2, i, 1);
-        ?? r0 = zD;
+        int r0 = zD ? 1 : 0;
         if (d(f2, f, i, 4)) {
             r0 = (zD ? 1 : 0) | 4;
         }
-        ?? r02 = r0;
+        int r02 = r0;
         if (d(f, f2, i, 2)) {
-            r02 = (r0 == true ? 1 : 0) | 2;
+            r02 = (r0 != 0 ? 1 : 0) | 2;
         }
-        ?? r03 = r02;
+        int r03 = r02;
         if (d(f2, f, i, 8)) {
-            r03 = (r02 == true ? 1 : 0) | 8;
+            r03 = (r02 != 0 ? 1 : 0) | 8;
         }
         if (r03 != 0) {
             int[] iArr = this.i;
@@ -629,17 +565,11 @@ public final class mn1 {
         return false;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:53:0x00db  */
-    /* JADX WARN: Removed duplicated region for block: B:62:0x00f3  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+     
+     
+     
     public final boolean s(android.view.MotionEvent r19) {
-        /*
-            Method dump skipped, instruction units count: 297
-            To view this dump add '--comments-level debug' option
-        */
+         
         throw new UnsupportedOperationException("Method not decompiled: defpackage.mn1.s(android.view.MotionEvent):boolean");
     }
 

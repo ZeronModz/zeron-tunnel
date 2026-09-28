@@ -18,8 +18,8 @@ import com.github.mikephil.charting.utils.ViewPortHandler;
 import defpackage.od;
 import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes.dex */
+ 
+ 
 public class BubbleChartRenderer extends BarLineScatterCandleBubbleRenderer {
     public final BubbleDataProvider g;
     public final float[] h;
@@ -37,7 +37,7 @@ public class BubbleChartRenderer extends BarLineScatterCandleBubbleRenderer {
         this.d.setStrokeWidth(Utils.c(1.5f));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
     public final void b(Canvas canvas) {
         char c;
@@ -102,23 +102,17 @@ public class BubbleChartRenderer extends BarLineScatterCandleBubbleRenderer {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Removed duplicated region for block: B:8:0x0028  */
+     
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+     
     public final void d(android.graphics.Canvas r22, com.github.mikephil.charting.highlight.Highlight[] r23) {
-        /*
-            Method dump skipped, instruction units count: 286
-            To view this dump add '--comments-level debug' option
-        */
+         
         throw new UnsupportedOperationException("Method not decompiled: com.github.mikephil.charting.renderer.BubbleChartRenderer.d(android.graphics.Canvas, com.github.mikephil.charting.highlight.Highlight[]):void");
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r8v9, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
+     
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
     public final void e(Canvas canvas) {
         BubbleDataProvider bubbleDataProvider;
@@ -155,7 +149,7 @@ public class BubbleChartRenderer extends BarLineScatterCandleBubbleRenderer {
                     int i4 = 0;
                     while (i4 < i3) {
                         float f2 = f;
-                        ?? entryForIndex = iBubbleDataSet.getEntryForIndex((i4 / 2) + i2);
+                        Entry entryForIndex = iBubbleDataSet.getEntryForIndex((i4 / 2) + i2);
                         if (entryForIndex != 0) {
                             fArr[i4] = entryForIndex.b();
                             fArr[i4 + 1] = entryForIndex.a() * f2;

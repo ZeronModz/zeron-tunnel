@@ -36,18 +36,18 @@ import kotlin.jvm.internal.Reflection;
 import kotlin.text.g;
 import org.slf4j.Logger;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes3.dex */
+ 
+ 
 @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0005\u001a\u00020\u0004*\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00020\u00002\u0006\u0010\u0003\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"Lio/ktor/util/pipeline/PipelineContext;", "Lio/ktor/client/statement/HttpResponseContainer;", "Lio/ktor/client/call/HttpClientCall;", "<destruct>", "Lmk1;", "<anonymous>", "(Lio/ktor/util/pipeline/PipelineContext;Lio/ktor/client/statement/HttpResponseContainer;)V"}, k = 3, mv = {2, 0, 0})
 @DebugMetadata(c = "io.ktor.client.plugins.websocket.WebSockets$Plugin$install$2", f = "WebSockets.kt", i = {}, l = {215}, m = "invokeSuspend", n = {}, s = {})
 final class WebSockets$Plugin$install$2 extends SuspendLambda implements Function3<PipelineContext<HttpResponseContainer, HttpClientCall>, HttpResponseContainer, Continuation<? super mk1>, Object> {
-    final /* synthetic */ boolean $extensionsSupported;
-    final /* synthetic */ WebSockets $plugin;
-    private /* synthetic */ Object L$0;
-    /* synthetic */ Object L$1;
+    final   boolean $extensionsSupported;
+    final   WebSockets $plugin;
+    private   Object L$0;
+      Object L$1;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+     
     public WebSockets$Plugin$install$2(WebSockets webSockets, boolean z, Continuation<? super WebSockets$Plugin$install$2> continuation) {
         super(3, continuation);
         this.$plugin = webSockets;
@@ -62,24 +62,24 @@ final class WebSockets$Plugin$install$2 extends SuspendLambda implements Functio
         return webSockets$Plugin$install$2.invokeSuspend(mk1.a);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r10v12, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r10v8, types: [kotlin.collections.EmptyList] */
-    /* JADX WARN: Type inference failed for: r10v9, types: [java.util.List] */
-    /* JADX WARN: Type inference failed for: r12v3, types: [io.ktor.websocket.WebSocketExtension] */
-    /* JADX WARN: Type inference failed for: r6v4 */
-    /* JADX WARN: Type inference failed for: r6v5, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r6v7, types: [io.ktor.client.plugins.websocket.DefaultClientWebSocketSession] */
-    /* JADX WARN: Type inference failed for: r6v8 */
-    /* JADX WARN: Type inference failed for: r9v17, types: [kotlin.collections.EmptyList] */
-    /* JADX WARN: Type inference failed for: r9v18, types: [java.util.List] */
-    /* JADX WARN: Type inference failed for: r9v24, types: [java.util.ArrayList] */
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Object invokeSuspend(Object obj) throws Throwable {
-        ?? delegatingClientWebSocketSession;
+        DelegatingClientWebSocketSession delegatingClientWebSocketSession;
         DefaultWebSocketSession defaultWebSocketSession;
-        ?? arrayList;
-        ?? arrayList2;
+        ArrayList arrayList;
+        ArrayList arrayList2;
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
         int i = this.label;
         mk1 mk1Var = mk1.a;
@@ -137,7 +137,7 @@ final class WebSockets$Plugin$install$2 extends SuspendLambda implements Functio
                     defaultWebSocketSession = defaultWebSocketSessionImpl;
                 }
                 HttpClientCall httpClientCall = (HttpClientCall) obj3;
-                ?? defaultClientWebSocketSession = new DefaultClientWebSocketSession(httpClientCall, defaultWebSocketSession);
+                DefaultClientWebSocketSession defaultClientWebSocketSession = new DefaultClientWebSocketSession(httpClientCall, defaultWebSocketSession);
                 if (this.$extensionsSupported) {
                     this.$plugin.getClass();
                     Headers d2 = httpClientCall.d().getD();

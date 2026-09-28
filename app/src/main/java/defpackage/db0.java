@@ -89,28 +89,28 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import org.json.JSONObject;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes.dex */
+ 
+ 
 public final class db0 implements Runnable {
-    public final /* synthetic */ int a;
+    public final   int a;
     public final Object b;
     public final Object c;
 
-    public /* synthetic */ db0(int i, Object obj, Object obj2) {
+    public   db0(int i, Object obj, Object obj2) {
         this.a = i;
         this.b = obj;
         this.c = obj2;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v0, types: [com.google.common.util.concurrent.ListenableFuture] */
-    /* JADX WARN: Type inference failed for: r3v24 */
-    /* JADX WARN: Type inference failed for: r3v25, types: [java.io.Closeable] */
-    /* JADX WARN: Type inference failed for: r3v27 */
-    /* JADX WARN: Type inference failed for: r3v28 */
-    /* JADX WARN: Type inference failed for: r3v48 */
-    /* JADX WARN: Type inference failed for: r3v49 */
-    /* JADX WARN: Type inference failed for: r3v50 */
+     
+     
+     
+     
+     
+     
+     
+     
+     
     @Override // java.lang.Runnable
     public final void run() throws Throwable {
         String str;
@@ -121,7 +121,8 @@ public final class db0 implements Runnable {
         zzfjr zzfjrVar;
         zzfjr zzfjrVar2;
         int i2 = 2;
-        ?? r3 = 0;
+        int r3 = 0;
+        DataOutputStream r3ds = null;
         DataOutputStream dataOutputStream2 = null;
         int i3 = 0;
         int i4 = 1;
@@ -389,18 +390,18 @@ public final class db0 implements Runnable {
                         zzt.zzh().f("LargeParcelTeleporter.pipeData.1", e);
                         if (dataOutputStream2 == null) {
                             mc2.i(autoCloseOutputStream);
-                            r3 = dataOutputStream2;
+                            r3ds = dataOutputStream2;
                         } else {
                             mc2.i(dataOutputStream2);
-                            r3 = dataOutputStream2;
+                            r3ds = dataOutputStream2;
                         }
                     } catch (Throwable th2) {
                         th = th2;
-                        r3 = dataOutputStream;
-                        if (r3 == 0) {
+                        r3ds = dataOutputStream;
+                        if (r3ds == null) {
                             mc2.i(autoCloseOutputStream);
                         } else {
-                            mc2.i(r3);
+                            mc2.i(r3ds);
                         }
                         throw th;
                     }
@@ -506,10 +507,10 @@ public final class db0 implements Runnable {
                 case 23:
                     ((j3) this.b).i((String) this.c);
                     return;
-                case ErrorCodes.SSH_FX_FILE_IS_A_DIRECTORY /* 24 */:
+                case ErrorCodes.SSH_FX_FILE_IS_A_DIRECTORY  :
                     ((zzckw) this.b).a.zza(Uri.parse((String) this.c));
                     return;
-                case ErrorCodes.SSH_FX_BYTE_RANGE_LOCK_CONFLICT /* 25 */:
+                case ErrorCodes.SSH_FX_BYTE_RANGE_LOCK_CONFLICT  :
                     be2 be2Var = (be2) this.b;
                     Runnable runnable = (Runnable) this.c;
                     yg0.i("Adapters must be initialized on the main thread.");
@@ -578,7 +579,7 @@ public final class db0 implements Runnable {
                         return;
                     }
                     return;
-                case ErrorCodes.SSH_FX_BYTE_RANGE_LOCK_REFUSED /* 26 */:
+                case ErrorCodes.SSH_FX_BYTE_RANGE_LOCK_REFUSED  :
                     ve2 ve2Var = (ve2) this.b;
                     Throwable th4 = (Throwable) this.c;
                     boolean zBooleanValue2 = ((Boolean) zzbd.zzc().a(p32.Mb)).booleanValue();
@@ -605,7 +606,7 @@ public final class db0 implements Runnable {
                     zzo.zzd(sb4.toString());
                     zzctcVar.a.zzb("AFMA_updateActiveView", jSONObject2);
                     return;
-                case ErrorCodes.SSH_FX_FILE_CORRUPT /* 28 */:
+                case ErrorCodes.SSH_FX_FILE_CORRUPT  :
                     zzdm zzdmVar = (zzdm) this.b;
                     Integer num = (Integer) this.c;
                     if (zzdmVar.f == 0) {
@@ -645,7 +646,7 @@ public final class db0 implements Runnable {
         }
     }
 
-    public /* synthetic */ db0(Object obj, int i, Object obj2, boolean z) {
+    public   db0(Object obj, int i, Object obj2, boolean z) {
         this.a = i;
         this.c = obj;
         this.b = obj2;

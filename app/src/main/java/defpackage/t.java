@@ -57,18 +57,18 @@ import kotlinx.serialization.json.JsonElement;
 import okhttp3.ResponseBody;
 import org.slf4j.Logger;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes3.dex */
-public final /* synthetic */ class t implements Function1 {
-    public final /* synthetic */ int a;
-    public final /* synthetic */ Object b;
+ 
+ 
+public final   class t implements Function1 {
+    public final   int a;
+    public final   Object b;
 
-    public /* synthetic */ t(HttpAuthHeader.Parameterized parameterized, HeaderValueEncoding headerValueEncoding) {
+    public   t(HttpAuthHeader.Parameterized parameterized, HeaderValueEncoding headerValueEncoding) {
         this.a = 8;
         this.b = headerValueEncoding;
     }
 
-    /* JADX WARN: Type inference failed for: r13v42, types: [T, java.lang.Object, kotlinx.serialization.json.JsonElement] */
+     
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Object obj) {
         SerialDescriptor descriptor;
@@ -265,12 +265,12 @@ public final /* synthetic */ class t implements Function1 {
                 int i6 = QRScannerActivity.j;
                 ((ak0) obj2).c.q.enableTorch(zBooleanValue);
                 return mk1Var;
-            case ErrorCodes.SSH_FX_FILE_IS_A_DIRECTORY /* 24 */:
+            case ErrorCodes.SSH_FX_FILE_IS_A_DIRECTORY  :
                 SerialDescriptorImpl serialDescriptorImpl = (SerialDescriptorImpl) obj2;
                 int iIntValue2 = ((Integer) obj).intValue();
                 return serialDescriptorImpl.f[iIntValue2] + ": " + serialDescriptorImpl.g[iIntValue2].getA();
-            case ErrorCodes.SSH_FX_BYTE_RANGE_LOCK_CONFLICT /* 25 */:
-                ?? r13 = (JsonElement) obj;
+            case ErrorCodes.SSH_FX_BYTE_RANGE_LOCK_CONFLICT  :
+                JsonElement r13 = (JsonElement) obj;
                 r13.getClass();
                 ((Ref$ObjectRef) obj2).element = r13;
                 return mk1Var;
@@ -285,7 +285,7 @@ public final /* synthetic */ class t implements Function1 {
         }
     }
 
-    public /* synthetic */ t(Object obj, int i) {
+    public   t(Object obj, int i) {
         this.a = i;
         this.b = obj;
     }

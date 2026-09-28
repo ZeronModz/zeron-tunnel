@@ -26,11 +26,11 @@ import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Ref$ObjectRef;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes3.dex */
+ 
+ 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/v2ray/ang/ui/ServerStatusVIew;", "Landroidx/appcompat/app/AppCompatActivity;", "<init>", "()V", "app_playstoreRelease"}, k = 1, mv = {2, 2, 0}, xi = 48)
 public final class ServerStatusVIew extends AppCompatActivity {
-    public static final /* synthetic */ int c = 0;
+    public static final   int c = 0;
     public final Lazy b = kotlin.c.b(new l8(this, 20));
 
     public final List g(String str) {
@@ -65,7 +65,7 @@ public final class ServerStatusVIew extends AppCompatActivity {
         return arrayList;
     }
 
-    /* JADX WARN: Type inference failed for: r1v1, types: [T, java.util.List] */
+     
     @Override // androidx.fragment.app.FragmentActivity, androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
     public final void onCreate(Bundle bundle) {
         androidx.activity.c.a(this);
@@ -74,7 +74,7 @@ public final class ServerStatusVIew extends AppCompatActivity {
         setContentView(((h3) lazy.getValue()).a);
         n8.c(this);
         Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ?? G = g(null);
+        List G = g(null);
         ref$ObjectRef.element = G;
         ServerStatusAdapter serverStatusAdapter = new ServerStatusAdapter(this, G, m.a(this));
         ((h3) lazy.getValue()).d.setAdapter(serverStatusAdapter);

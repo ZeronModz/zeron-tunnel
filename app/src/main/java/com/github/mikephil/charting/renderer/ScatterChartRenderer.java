@@ -12,8 +12,8 @@ import com.github.mikephil.charting.utils.Transformer;
 import com.github.mikephil.charting.utils.ViewPortHandler;
 import defpackage.xm0;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes.dex */
+ 
+ 
 public class ScatterChartRenderer extends LineScatterCandleRadarRenderer {
     public final ScatterDataProvider h;
     public final float[] i;
@@ -24,7 +24,7 @@ public class ScatterChartRenderer extends LineScatterCandleRadarRenderer {
         this.h = scatterDataProvider;
     }
 
-    /* JADX WARN: Type inference failed for: r5v5, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
     public final void b(Canvas canvas) {
         ScatterDataProvider scatterDataProvider = this.h;
@@ -36,7 +36,7 @@ public class ScatterChartRenderer extends LineScatterCandleRadarRenderer {
                 if (shapeRenderer != null) {
                     int iMin = (int) Math.min(Math.ceil(iScatterDataSet.getEntryCount() * 1.0f), iScatterDataSet.getEntryCount());
                     for (int i = 0; i < iMin; i++) {
-                        ?? entryForIndex = iScatterDataSet.getEntryForIndex(i);
+                        Entry entryForIndex = iScatterDataSet.getEntryForIndex(i);
                         float fB = entryForIndex.b();
                         float[] fArr = this.i;
                         fArr[0] = fB;
@@ -59,8 +59,8 @@ public class ScatterChartRenderer extends LineScatterCandleRadarRenderer {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r6v2, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
+     
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
     public final void d(Canvas canvas, Highlight[] highlightArr) {
         ScatterDataProvider scatterDataProvider = this.h;
@@ -68,7 +68,7 @@ public class ScatterChartRenderer extends LineScatterCandleRadarRenderer {
         for (Highlight highlight : highlightArr) {
             IScatterDataSet iScatterDataSet = (IScatterDataSet) scatterData.b(highlight.f);
             if (iScatterDataSet != null && iScatterDataSet.isHighlightEnabled()) {
-                ?? entryForXValue = iScatterDataSet.getEntryForXValue(highlight.a, highlight.b);
+                Entry entryForXValue = iScatterDataSet.getEntryForXValue(highlight.a, highlight.b);
                 if (h(entryForXValue, iScatterDataSet)) {
                     Transformer transformer = scatterDataProvider.getTransformer(iScatterDataSet.getAxisDependency());
                     float fB = entryForXValue.b();
@@ -85,19 +85,13 @@ public class ScatterChartRenderer extends LineScatterCandleRadarRenderer {
         }
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:32:0x00d6  */
-    /* JADX WARN: Type inference failed for: r13v9, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r14v3, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
+     
+     
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+     
     public final void e(android.graphics.Canvas r25) {
-        /*
-            Method dump skipped, instruction units count: 342
-            To view this dump add '--comments-level debug' option
-        */
+         
         throw new UnsupportedOperationException("Method not decompiled: com.github.mikephil.charting.renderer.ScatterChartRenderer.e(android.graphics.Canvas):void");
     }
 

@@ -15,27 +15,27 @@ import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes.dex */
+ 
+ 
 public final class zt2 {
     public final List a;
     public final ut2 b;
     public final ArrayList c;
     public final Bundle d;
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v10 */
-    /* JADX WARN: Type inference failed for: r0v4, types: [java.util.List] */
-    /* JADX WARN: Type inference failed for: r0v5, types: [java.util.List] */
-    /* JADX WARN: Type inference failed for: r0v7 */
-    /* JADX WARN: Type inference failed for: r0v8, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r0v9 */
+     
+     
+     
+     
+     
+     
+     
     public zt2(JsonReader jsonReader, Bundle bundle) throws JSONException, IOException {
         this.d = bundle;
         if (((Boolean) zzbd.zzc().a(p32.K2)).booleanValue() && bundle != null) {
             ec1.R(zzdxh.SERVER_RESPONSE_PARSE_START.zza(), bundle);
         }
-        ?? arrayList = Collections.EMPTY_LIST;
+        List arrayList = Collections.EMPTY_LIST;
         ArrayList arrayList2 = new ArrayList();
         jsonReader.beginObject();
         ut2 ut2Var = null;

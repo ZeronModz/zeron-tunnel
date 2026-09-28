@@ -10,8 +10,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes.dex */
+ 
+ 
 public final class yy1 {
     public long a;
     public final String b;
@@ -22,19 +22,19 @@ public final class yy1 {
     public final long g;
     public final List h;
 
-    /* JADX WARN: Illegal instructions before constructor call */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v0, types: [java.util.List] */
-    /* JADX WARN: Type inference failed for: r0v1, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r0v2 */
-    /* JADX WARN: Type inference failed for: r11v1, types: [java.util.List] */
+     
+     
+     
+     
+     
+     
     public yy1(String str, zzarh zzarhVar) {
         String str2 = zzarhVar.b;
         long j = zzarhVar.c;
         long j2 = zzarhVar.d;
         long j3 = zzarhVar.e;
         long j4 = zzarhVar.f;
-        ?? arrayList = zzarhVar.h;
+        List arrayList = zzarhVar.h;
         if (arrayList == 0) {
             Map map = zzarhVar.g;
             arrayList = new ArrayList(map.size());

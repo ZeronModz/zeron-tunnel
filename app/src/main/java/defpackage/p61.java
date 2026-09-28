@@ -22,15 +22,15 @@ import kotlin.Pair;
 import kotlin.collections.c;
 import kotlin.jvm.internal.Ref$ObjectRef;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes3.dex */
-public final /* synthetic */ class p61 implements View.OnClickListener {
-    public final /* synthetic */ int a;
-    public final /* synthetic */ AppCompatActivity b;
-    public final /* synthetic */ Serializable c;
-    public final /* synthetic */ Object d;
+ 
+ 
+public final   class p61 implements View.OnClickListener {
+    public final   int a;
+    public final   AppCompatActivity b;
+    public final   Serializable c;
+    public final   Object d;
 
-    public /* synthetic */ p61(AppCompatActivity appCompatActivity, Serializable serializable, Object obj, int i) {
+    public   p61(AppCompatActivity appCompatActivity, Serializable serializable, Object obj, int i) {
         this.a = i;
         this.b = appCompatActivity;
         this.c = serializable;
@@ -57,24 +57,15 @@ public final /* synthetic */ class p61 implements View.OnClickListener {
                 listPopupWindow.setHorizontalOffset(-view.getWidth());
                 listPopupWindow.setWidth(-2);
                 listPopupWindow.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: q61
-                    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
-                    /* JADX WARN: Multi-variable type inference failed */
-                    /* JADX WARN: Type inference failed for: r1v10, types: [T, java.util.List] */
-                    /* JADX WARN: Type inference failed for: r1v5, types: [T, java.util.List] */
-                    /* JADX WARN: Type inference failed for: r1v6, types: [T, java.util.List] */
-                    /* JADX WARN: Type inference failed for: r1v7, types: [T, java.util.List] */
-                    /* JADX WARN: Type inference failed for: r1v8, types: [T, java.util.List] */
-                    /* JADX WARN: Type inference failed for: r1v9, types: [T, java.util.List] */
-                    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-                    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-                    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:593)
-                    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-                    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-                    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-                    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-                    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-                    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-                     */
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
                     @Override // android.widget.AdapterView.OnItemClickListener
                     public final void onItemClick(AdapterView adapterView, View view2, int i3, long j) {
                         int i4 = ServerStatusVIew.c;
@@ -86,42 +77,42 @@ public final /* synthetic */ class p61 implements View.OnClickListener {
                         switch (iHashCode) {
                             case -46999946:
                                 if (str.equals("UDP Hysteria")) {
-                                    ?? G = serverStatusVIew2.g(str);
+                                    List G = serverStatusVIew2.g(str);
                                     ref$ObjectRef2.element = G;
                                     serverStatusAdapter2.u(G);
                                 }
                                 break;
                             case 82408:
                                 if (str.equals("SSH")) {
-                                    ?? G2 = serverStatusVIew2.g(str);
+                                    List G2 = serverStatusVIew2.g(str);
                                     ref$ObjectRef2.element = G2;
                                     serverStatusAdapter2.u(G2);
                                 }
                                 break;
                             case 2438693:
                                 if (str.equals("OVPN")) {
-                                    ?? G3 = serverStatusVIew2.g(str);
+                                    List G3 = serverStatusVIew2.g(str);
                                     ref$ObjectRef2.element = G3;
                                     serverStatusAdapter2.u(G3);
                                 }
                                 break;
                             case 65205577:
                                 if (str.equals("DNSTT")) {
-                                    ?? G4 = serverStatusVIew2.g(str);
+                                    List G4 = serverStatusVIew2.g(str);
                                     ref$ObjectRef2.element = G4;
                                     serverStatusAdapter2.u(G4);
                                 }
                                 break;
                             case 81025038:
                                 if (str.equals("V2ray")) {
-                                    ?? G5 = serverStatusVIew2.g(str);
+                                    List G5 = serverStatusVIew2.g(str);
                                     ref$ObjectRef2.element = G5;
                                     serverStatusAdapter2.u(G5);
                                 }
                                 break;
                             case 1404911586:
                                 if (str.equals("V2ray GCP")) {
-                                    ?? G6 = serverStatusVIew2.g(str);
+                                    List G6 = serverStatusVIew2.g(str);
                                     ref$ObjectRef2.element = G6;
                                     serverStatusAdapter2.u(G6);
                                 }

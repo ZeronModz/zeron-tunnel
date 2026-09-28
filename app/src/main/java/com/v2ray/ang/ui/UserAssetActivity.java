@@ -64,11 +64,11 @@ import kotlin.jvm.internal.Ref$IntRef;
 import kotlin.jvm.internal.Ref$ObjectRef;
 import kotlin.text.Regex;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes3.dex */
+ 
+ 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001:\u0002\u0004\u0005B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0006"}, d2 = {"Lcom/v2ray/ang/ui/UserAssetActivity;", "Lcom/v2ray/ang/ui/BaseActivity;", "<init>", "()V", "UserAssetAdapter", "UserAssetViewHolder", "app_playstoreRelease"}, k = 1, mv = {2, 2, 0}, xi = 48)
 public final class UserAssetActivity extends BaseActivity {
-    public static final /* synthetic */ int j = 0;
+    public static final   int j = 0;
     public final Lazy c;
     public final Lazy d;
     public final String[] e = {"geosite.dat", "geoip.dat"};
@@ -77,7 +77,7 @@ public final class UserAssetActivity extends BaseActivity {
     public final ActivityResultLauncher h;
     public final ActivityResultLauncher i;
 
-    /* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
+     
     @Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0007¢\u0006\u0004\b\u0003\u0010\u0004¨\u0006\u0005"}, d2 = {"Lcom/v2ray/ang/ui/UserAssetActivity$UserAssetAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/v2ray/ang/ui/UserAssetActivity$UserAssetViewHolder;", "<init>", "(Lcom/v2ray/ang/ui/UserAssetActivity;)V", "app_playstoreRelease"}, k = 1, mv = {2, 2, 0}, xi = 48)
     public final class UserAssetAdapter extends RecyclerView.Adapter<UserAssetViewHolder> {
         public UserAssetAdapter() {
@@ -165,12 +165,12 @@ public final class UserAssetActivity extends BaseActivity {
         }
     }
 
-    /* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
+     
     @Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2 = {"Lcom/v2ray/ang/ui/UserAssetActivity$UserAssetViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "Lgh0;", "itemUserAssetBinding", "<init>", "(Lgh0;)V", "app_playstoreRelease"}, k = 1, mv = {2, 2, 0}, xi = 48)
     public static final class UserAssetViewHolder extends RecyclerView.ViewHolder {
         public final gh0 u;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+         
         public UserAssetViewHolder(gh0 gh0Var) {
             super(gh0Var.a);
             gh0Var.getClass();
@@ -181,7 +181,7 @@ public final class UserAssetActivity extends BaseActivity {
     public UserAssetActivity() {
         final int i = 0;
         this.c = kotlin.c.b(new Function0(this) { // from class: ll1
-            public final /* synthetic */ UserAssetActivity b;
+            public final   UserAssetActivity b;
 
             {
                 this.b = this;
@@ -226,7 +226,7 @@ public final class UserAssetActivity extends BaseActivity {
         });
         final int i2 = 1;
         this.d = kotlin.c.b(new Function0(this) { // from class: ll1
-            public final /* synthetic */ UserAssetActivity b;
+            public final   UserAssetActivity b;
 
             {
                 this.b = this;
@@ -270,128 +270,68 @@ public final class UserAssetActivity extends BaseActivity {
             }
         });
         this.f = registerForActivityResult(new ActivityResultContracts$RequestPermission(), new ActivityResultCallback(this) { // from class: ml1
-            public final /* synthetic */ UserAssetActivity b;
+            public final   UserAssetActivity b;
 
             {
                 this.b = this;
             }
 
-            /* JADX WARN: Removed duplicated region for block: B:49:0x00e3  */
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:593)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-             */
+             
+             
             @Override // androidx.activity.result.ActivityResultCallback
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
+             
             public final void onActivityResult(java.lang.Object r14) {
-                /*
-                    Method dump skipped, instruction units count: 338
-                    To view this dump add '--comments-level debug' option
-                */
+                 
                 throw new UnsupportedOperationException("Method not decompiled: defpackage.ml1.onActivityResult(java.lang.Object):void");
             }
         });
         this.g = registerForActivityResult(new ActivityResultContracts$RequestPermission(), new ActivityResultCallback(this) { // from class: ml1
-            public final /* synthetic */ UserAssetActivity b;
+            public final   UserAssetActivity b;
 
             {
                 this.b = this;
             }
 
-            /* JADX WARN: Removed duplicated region for block: B:49:0x00e3  */
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:593)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-             */
+             
+             
             @Override // androidx.activity.result.ActivityResultCallback
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
+             
             public final void onActivityResult(java.lang.Object r14) {
-                /*
-                    Method dump skipped, instruction units count: 338
-                    To view this dump add '--comments-level debug' option
-                */
+                 
                 throw new UnsupportedOperationException("Method not decompiled: defpackage.ml1.onActivityResult(java.lang.Object):void");
             }
         });
         final int i3 = 2;
         this.h = registerForActivityResult(new ActivityResultContracts$StartActivityForResult(), new ActivityResultCallback(this) { // from class: ml1
-            public final /* synthetic */ UserAssetActivity b;
+            public final   UserAssetActivity b;
 
             {
                 this.b = this;
             }
 
-            /* JADX WARN: Removed duplicated region for block: B:49:0x00e3  */
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:593)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-             */
+             
+             
             @Override // androidx.activity.result.ActivityResultCallback
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
+             
             public final void onActivityResult(java.lang.Object r14) {
-                /*
-                    Method dump skipped, instruction units count: 338
-                    To view this dump add '--comments-level debug' option
-                */
+                 
                 throw new UnsupportedOperationException("Method not decompiled: defpackage.ml1.onActivityResult(java.lang.Object):void");
             }
         });
         final int i4 = 3;
         this.i = registerForActivityResult(new ActivityResultContracts$StartActivityForResult(), new ActivityResultCallback(this) { // from class: ml1
-            public final /* synthetic */ UserAssetActivity b;
+            public final   UserAssetActivity b;
 
             {
                 this.b = this;
             }
 
-            /* JADX WARN: Removed duplicated region for block: B:49:0x00e3  */
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:593)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-             */
+             
+             
             @Override // androidx.activity.result.ActivityResultCallback
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
+             
             public final void onActivityResult(java.lang.Object r14) {
-                /*
-                    Method dump skipped, instruction units count: 338
-                    To view this dump add '--comments-level debug' option
-                */
+                 
                 throw new UnsupportedOperationException("Method not decompiled: defpackage.ml1.onActivityResult(java.lang.Object):void");
             }
         });
@@ -535,30 +475,30 @@ public final class UserAssetActivity extends BaseActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r9v12, types: [T, java.util.List] */
-    /* JADX WARN: Type inference failed for: r9v13, types: [T, java.util.ArrayList] */
+     
+     
+     
     @Override // com.v2ray.ang.ui.BaseActivity, android.app.Activity
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         menuItem.getClass();
         switch (menuItem.getItemId()) {
-            case R.id.add_file /* 2131296341 */:
+            case R.id.add_file  :
                 this.f.a(Build.VERSION.SDK_INT >= 33 ? "android.permission.READ_MEDIA_IMAGES" : "android.permission.READ_EXTERNAL_STORAGE");
                 return true;
-            case R.id.add_qrcode /* 2131296342 */:
+            case R.id.add_qrcode  :
                 this.g.a("android.permission.CAMERA");
                 return true;
-            case R.id.add_url /* 2131296344 */:
+            case R.id.add_url  :
                 startActivity(new Intent(this, (Class<?>) UserAssetUrlActivity.class));
                 return true;
-            case R.id.download_file /* 2131296516 */:
+            case R.id.download_file  :
                 k().c.d();
                 qf3.K(this, R.string.msg_downloading_content);
                 Regex regex = ul1.a;
                 Lazy lazy = zq0.a;
                 int iY = ul1.y(Integer.parseInt("10808"), zq0.z().d("pref_socks_port"));
                 Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-                ?? B = zq0.b();
+                List B = zq0.b();
                 ref$ObjectRef.element = B;
                 ref$ObjectRef.element = h(B);
                 Ref$IntRef ref$IntRef = new Ref$IntRef();

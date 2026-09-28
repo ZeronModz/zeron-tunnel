@@ -20,6 +20,7 @@ import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.EmptyList;
@@ -33,20 +34,20 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes3.dex */
+ 
+ 
 @Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2 = {"Lcom/AiH;", RequestConfiguration.MAX_AD_CONTENT_RATING_UNSPECIFIED, "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "app_playstoreRelease"}, k = 1, mv = {2, 2, 0}, xi = 48)
 public final class AiH {
     public final Context a;
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v16, types: [kotlin.collections.EmptyList] */
-    /* JADX WARN: Type inference failed for: r1v17, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r1v2, types: [kotlin.collections.EmptyList] */
-    /* JADX WARN: Type inference failed for: r1v3, types: [java.util.Collection] */
+     
+     
+     
+     
+     
     public AiH(Context context) throws JSONException {
         int i;
-        ?? arrayList;
+        List arrayList;
         Signature[] apkContentsSigners;
         File[] fileArrListFiles;
         context.getClass();

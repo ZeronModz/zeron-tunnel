@@ -25,8 +25,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes.dex */
+ 
+ 
 public class LineChartRenderer extends LineRadarRenderer {
     public final LineDataProvider h;
     public final Paint i;
@@ -56,42 +56,42 @@ public class LineChartRenderer extends LineRadarRenderer {
         paint.setColor(-1);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r10v35 */
-    /* JADX WARN: Type inference failed for: r10v36, types: [com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r10v37, types: [com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r10v40 */
-    /* JADX WARN: Type inference failed for: r10v43 */
-    /* JADX WARN: Type inference failed for: r12v6 */
-    /* JADX WARN: Type inference failed for: r12v7, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r12v8 */
-    /* JADX WARN: Type inference failed for: r24v0, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r28v0, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r28v1, types: [com.github.mikephil.charting.data.BaseEntry] */
-    /* JADX WARN: Type inference failed for: r28v2 */
-    /* JADX WARN: Type inference failed for: r28v4 */
-    /* JADX WARN: Type inference failed for: r32v0 */
-    /* JADX WARN: Type inference failed for: r32v1, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r32v2 */
-    /* JADX WARN: Type inference failed for: r3v14, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r3v15, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r3v19 */
-    /* JADX WARN: Type inference failed for: r3v41 */
-    /* JADX WARN: Type inference failed for: r5v14, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r5v19, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r5v40, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r8v12, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r8v18 */
-    /* JADX WARN: Type inference failed for: r8v19 */
-    /* JADX WARN: Type inference failed for: r8v20 */
-    /* JADX WARN: Type inference failed for: r8v4, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r8v5 */
-    /* JADX WARN: Type inference failed for: r8v6, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r8v7 */
-    /* JADX WARN: Type inference failed for: r9v15 */
-    /* JADX WARN: Type inference failed for: r9v23, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r9v46 */
-    /* JADX WARN: Type inference failed for: r9v7, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
     public final void b(Canvas canvas) {
         Bitmap bitmap;
@@ -106,7 +106,7 @@ public class LineChartRenderer extends LineRadarRenderer {
         int i3;
         int i4;
         int i5;
-        ?? r32;
+        Entry r32;
         ViewPortHandler viewPortHandler = this.a;
         int i6 = (int) viewPortHandler.c;
         int i7 = (int) viewPortHandler.d;
@@ -155,17 +155,17 @@ public class LineChartRenderer extends LineRadarRenderer {
                     if (odVar.c >= 1) {
                         int i10 = odVar.a;
                         Object entryForIndex = iLineDataSet.getEntryForIndex(Math.max(i10 - 1, 0));
-                        ?? entryForIndex2 = iLineDataSet.getEntryForIndex(Math.max(i10, 0));
+                        Entry entryForIndex2 = iLineDataSet.getEntryForIndex(Math.max(i10, 0));
                         if (entryForIndex2 != 0) {
                             path.moveTo(entryForIndex2.b(), entryForIndex2.a() * 1.0f);
                             transformer = transformer4;
                             int i11 = -1;
                             int i12 = odVar.a + 1;
-                            ?? r12 = entryForIndex2;
-                            ?? r8 = entryForIndex2;
-                            ?? r9 = entryForIndex;
+                            Entry r12 = entryForIndex2;
+                            Entry r8 = entryForIndex2;
+                            Entry r9 = entryForIndex;
                             while (true) {
-                                ?? entryForIndex3 = r8;
+                                Entry entryForIndex3 = r8;
                                 if (i12 > odVar.c + odVar.a) {
                                     break;
                                 }
@@ -174,7 +174,7 @@ public class LineChartRenderer extends LineRadarRenderer {
                                 }
                                 int i13 = i12 + 1;
                                 i11 = i13 < iLineDataSet.getEntryCount() ? i13 : i12;
-                                ?? entryForIndex4 = iLineDataSet.getEntryForIndex(i11);
+                                Entry entryForIndex4 = iLineDataSet.getEntryForIndex(i11);
                                 path.cubicTo(r12.b() + ((entryForIndex3.b() - r9.b()) * cubicIntensity), (r12.a() + ((entryForIndex3.a() - r9.a()) * cubicIntensity)) * 1.0f, entryForIndex3.b() - ((entryForIndex4.b() - r12.b()) * cubicIntensity), (entryForIndex3.a() - ((entryForIndex4.a() - r12.a()) * cubicIntensity)) * 1.0f, entryForIndex3.b(), entryForIndex3.a() * 1.0f);
                                 i12 = i13;
                                 r9 = r12;
@@ -244,16 +244,16 @@ public class LineChartRenderer extends LineRadarRenderer {
                                 int i22 = iLineDataSet.getMode() == LineDataSet.Mode.STEPPED ? 1 : i4;
                                 Path path3 = this.p;
                                 path3.reset();
-                                ?? entryForIndex5 = iLineDataSet.getEntryForIndex(i18);
+                                Entry entryForIndex5 = iLineDataSet.getEntryForIndex(i18);
                                 int i23 = i22;
                                 path3.moveTo(entryForIndex5.b(), fillLinePosition);
                                 bitmap = bitmap2;
                                 path3.lineTo(entryForIndex5.b(), entryForIndex5.a() * 1.0f);
                                 int i24 = i18 + 1;
-                                ?? r10 = 0;
-                                ?? r28 = entryForIndex5;
+                                int r10 = 0;
+                                Entry r28 = entryForIndex5;
                                 while (i24 <= i20) {
-                                    ?? entryForIndex6 = iLineDataSet.getEntryForIndex(i24);
+                                    Entry entryForIndex6 = iLineDataSet.getEntryForIndex(i24);
                                     int i25 = i24;
                                     if (i23 != 0) {
                                         r32 = entryForIndex6;
@@ -263,7 +263,7 @@ public class LineChartRenderer extends LineRadarRenderer {
                                     }
                                     path3.lineTo(r32.b(), r32.a() * 1.0f);
                                     i24 = i25 + 1;
-                                    ?? r102 = r32;
+                                    Entry r102 = r32;
                                     r28 = r102;
                                     r10 = r102;
                                 }
@@ -305,12 +305,12 @@ public class LineChartRenderer extends LineRadarRenderer {
                         }
                         int i28 = odVar.a;
                         while (i28 <= odVar.c + odVar.a) {
-                            ?? entryForIndex7 = iLineDataSet.getEntryForIndex(i28);
+                            Entry entryForIndex7 = iLineDataSet.getEntryForIndex(i28);
                             if (entryForIndex7 != 0) {
                                 this.o[i4] = entryForIndex7.b();
                                 this.o[1] = entryForIndex7.a() * 1.0f;
                                 if (i28 < odVar.b) {
-                                    ?? entryForIndex8 = iLineDataSet.getEntryForIndex(i28 + 1);
+                                    Entry entryForIndex8 = iLineDataSet.getEntryForIndex(i28 + 1);
                                     if (entryForIndex8 == 0) {
                                         break;
                                     }
@@ -355,8 +355,8 @@ public class LineChartRenderer extends LineRadarRenderer {
                             int i30 = odVar.a;
                             int i31 = 0;
                             while (i30 <= odVar.c + odVar.a) {
-                                ?? entryForIndex9 = iLineDataSet.getEntryForIndex(i30 == 0 ? 0 : i30 - 1);
-                                ?? entryForIndex10 = iLineDataSet.getEntryForIndex(i30);
+                                Entry entryForIndex9 = iLineDataSet.getEntryForIndex(i30 == 0 ? 0 : i30 - 1);
+                                Entry entryForIndex10 = iLineDataSet.getEntryForIndex(i30);
                                 if (entryForIndex9 != 0 && entryForIndex10 != 0) {
                                     this.o[i31] = entryForIndex9.b();
                                     int i32 = i31 + 2;
@@ -392,12 +392,12 @@ public class LineChartRenderer extends LineRadarRenderer {
                     odVar.a(lineDataProvider, iLineDataSet);
                     path.reset();
                     if (odVar.c >= 1) {
-                        ?? entryForIndex11 = iLineDataSet.getEntryForIndex(odVar.a);
+                        Entry entryForIndex11 = iLineDataSet.getEntryForIndex(odVar.a);
                         path.moveTo(entryForIndex11.b(), entryForIndex11.a() * 1.0f);
                         int i33 = odVar.a + 1;
-                        ?? r3 = entryForIndex11;
+                        Entry r3 = entryForIndex11;
                         while (i33 <= odVar.c + odVar.a) {
-                            ?? entryForIndex12 = iLineDataSet.getEntryForIndex(i33);
+                            Entry entryForIndex12 = iLineDataSet.getEntryForIndex(i33);
                             float fB = ((entryForIndex12.b() - r3.b()) / 2.0f) + r3.b();
                             path.cubicTo(fB, r3.a() * 1.0f, fB, entryForIndex12.a() * 1.0f, entryForIndex12.b(), entryForIndex12.a() * 1.0f);
                             i33++;
@@ -427,24 +427,18 @@ public class LineChartRenderer extends LineRadarRenderer {
         }
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:48:0x0130  */
-    /* JADX WARN: Removed duplicated region for block: B:58:0x0166  */
-    /* JADX WARN: Type inference failed for: r4v3, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
+     
+     
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+     
     public final void c(android.graphics.Canvas r26) {
-        /*
-            Method dump skipped, instruction units count: 401
-            To view this dump add '--comments-level debug' option
-        */
+         
         throw new UnsupportedOperationException("Method not decompiled: com.github.mikephil.charting.renderer.LineChartRenderer.c(android.graphics.Canvas):void");
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r6v2, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
+     
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
     public final void d(Canvas canvas, Highlight[] highlightArr) {
         LineDataProvider lineDataProvider = this.h;
@@ -452,7 +446,7 @@ public class LineChartRenderer extends LineRadarRenderer {
         for (Highlight highlight : highlightArr) {
             ILineDataSet iLineDataSet = (ILineDataSet) lineData.b(highlight.f);
             if (iLineDataSet != null && iLineDataSet.isHighlightEnabled()) {
-                ?? entryForXValue = iLineDataSet.getEntryForXValue(highlight.a, highlight.b);
+                Entry entryForXValue = iLineDataSet.getEntryForXValue(highlight.a, highlight.b);
                 if (h(entryForXValue, iLineDataSet)) {
                     Transformer transformer = lineDataProvider.getTransformer(iLineDataSet.getAxisDependency());
                     float fB = entryForXValue.b();
@@ -469,8 +463,8 @@ public class LineChartRenderer extends LineRadarRenderer {
         }
     }
 
-    /* JADX WARN: Type inference failed for: r14v9, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r15v4, types: [com.github.mikephil.charting.data.BaseEntry, com.github.mikephil.charting.data.Entry] */
+     
+     
     @Override // com.github.mikephil.charting.renderer.DataRenderer
     public final void e(Canvas canvas) {
         LineDataProvider lineDataProvider;
@@ -505,7 +499,7 @@ public class LineChartRenderer extends LineRadarRenderer {
                         transformer.f = fArr;
                     }
                     for (int i4 = 0; i4 < i3; i4 += 2) {
-                        ?? entryForIndex = iLineDataSet.getEntryForIndex((i4 / 2) + i2);
+                        Entry entryForIndex = iLineDataSet.getEntryForIndex((i4 / 2) + i2);
                         if (entryForIndex != 0) {
                             fArr[i4] = entryForIndex.b();
                             fArr[i4 + 1] = entryForIndex.a() * 1.0f;
@@ -529,7 +523,7 @@ public class LineChartRenderer extends LineRadarRenderer {
                         }
                         if (viewPortHandler.e(f) && viewPortHandler.i(f2)) {
                             int i6 = i5 / 2;
-                            ?? entryForIndex2 = iLineDataSet.getEntryForIndex(odVar.a + i6);
+                            Entry entryForIndex2 = iLineDataSet.getEntryForIndex(odVar.a + i6);
                             if (iLineDataSet.isDrawValuesEnabled()) {
                                 valueFormatter.getClass();
                                 lineDataProvider2 = lineDataProvider3;
@@ -567,8 +561,8 @@ public class LineChartRenderer extends LineRadarRenderer {
         }
     }
 
-    /* JADX WARN: Type inference failed for: r1v3, types: [com.github.mikephil.charting.data.Entry] */
-    /* JADX WARN: Type inference failed for: r8v2, types: [com.github.mikephil.charting.data.Entry] */
+     
+     
     public final void m(Canvas canvas, ILineDataSet iLineDataSet, Path path, Transformer transformer, od odVar) {
         float fillLinePosition = iLineDataSet.getFillFormatter().getFillLinePosition(iLineDataSet, this.h);
         path.lineTo(iLineDataSet.getEntryForIndex(odVar.a + odVar.c).b(), fillLinePosition);

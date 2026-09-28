@@ -20,17 +20,17 @@ import kotlinx.coroutines.Job;
 import kotlinx.coroutines.JobSupport;
 import org.slf4j.Logger;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes3.dex */
+ 
+ 
 @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0001\u001a\u00020\u00002\u001c\u0010\u0006\u001a\u0018\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u0002H\n¢\u0006\u0004\b\u0007\u0010\b"}, d2 = {"Lio/ktor/client/request/HttpRequestBuilder;", "request", "Lkotlin/Function1;", "Lkotlin/coroutines/Continuation;", "Lmk1;", RequestConfiguration.MAX_AD_CONTENT_RATING_UNSPECIFIED, "proceed", "<anonymous>", "(Lio/ktor/client/request/HttpRequestBuilder;Lkotlin/jvm/functions/Function1;)V"}, k = 3, mv = {2, 0, 0})
 @DebugMetadata(c = "io.ktor.client.plugins.HttpRequestLifecycleKt$HttpRequestLifecycle$1$1", f = "HttpRequestLifecycle.kt", i = {0}, l = {27}, m = "invokeSuspend", n = {"executionContext"}, s = {"L$0"})
 final class HttpRequestLifecycleKt$HttpRequestLifecycle$1$1 extends SuspendLambda implements Function3<HttpRequestBuilder, Function1<? super Continuation<? super mk1>, ? extends Object>, Continuation<? super mk1>, Object> {
-    final /* synthetic */ ClientPluginBuilder<mk1> $this_createClientPlugin;
-    /* synthetic */ Object L$0;
-    /* synthetic */ Object L$1;
+    final   ClientPluginBuilder<mk1> $this_createClientPlugin;
+      Object L$0;
+      Object L$1;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+     
     public HttpRequestLifecycleKt$HttpRequestLifecycle$1$1(ClientPluginBuilder<mk1> clientPluginBuilder, Continuation<? super HttpRequestLifecycleKt$HttpRequestLifecycle$1$1> continuation) {
         super(3, continuation);
         this.$this_createClientPlugin = clientPluginBuilder;
@@ -44,17 +44,17 @@ final class HttpRequestLifecycleKt$HttpRequestLifecycle$1$1 extends SuspendLambd
         return httpRequestLifecycleKt$HttpRequestLifecycle$1$1.invokeSuspend(mk1.a);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r7v1 */
-    /* JADX WARN: Type inference failed for: r7v10, types: [kotlinx.coroutines.CompletableJob] */
-    /* JADX WARN: Type inference failed for: r7v11 */
-    /* JADX WARN: Type inference failed for: r7v3 */
-    /* JADX WARN: Type inference failed for: r7v4, types: [kotlinx.coroutines.CompletableJob] */
-    /* JADX WARN: Type inference failed for: r7v5, types: [kotlinx.coroutines.CompletableJob] */
+     
+     
+     
+     
+     
+     
+     
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Object invokeSuspend(Object obj) throws Throwable {
-        ?? r7;
-        ?? r72;
+        CompletableJob r7;
+        CompletableJob r72;
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
         int i = this.label;
         if (i != 0) {

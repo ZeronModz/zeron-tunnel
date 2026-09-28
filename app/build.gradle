@@ -229,3 +229,8 @@ dependencies {
     // SmoothBottomBar, blacksquircle editor, openvpn, jsocks, i2p,
     // androidx-legacy pieces already covered above
 }
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs << "-Xmaxerrs" << "5000" << "-Xmaxwarns" << "5000"
+    options.encoding = "UTF-8"
+}

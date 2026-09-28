@@ -47,8 +47,14 @@ jobs:
           gradle :app:assembleDebug --stacktrace --info > build.log 2>&1
           rc=$?
           if [ $rc -ne 0 ]; then
-            echo "=== BUILD FAILED - filtered log ==="
-            grep -aE "error:|Error:|Duplicate|Could not find|What went wrong|Execution failed|Manifest merger|Suggestion:" build.log | head -120
+            echo "=== error counts by file ==="
+            grep -aoE "^[^ ]+\.java:[0-9]+: error: [^=]*" build.log | sed -E 's/:[0-9]+: error: /|/' | sed -E 's/ \[[^]]*\]$//' | sort | uniq -c | sort -rn | head -60
+            echo "=== error type counts ==="
+            grep -aoE "error: [^=]*" build.log | sed 's/error: //' | sed 's/\[[^]]*\]//g' | sort | uniq -c | sort -rn | head -40
+            echo "=== first 400 errors ==="
+            grep -a "error:" build.log | head -400
+            echo "=== What went wrong ==="
+            grep -a -A25 "\* What went wrong" build.log | head -50
             echo "=== last 30 lines ==="
             tail -30 build.log
           fi
@@ -60,6 +66,14 @@ jobs:
           name: ZeronTunnel-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+
+      - name: Upload full build log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build.log
+          if-no-files-found: ignore
 
       - name: Upload mapping / reports on failure
         if: failure()

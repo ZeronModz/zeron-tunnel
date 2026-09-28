@@ -21,33 +21,24 @@ import androidx.work.multiprocess.e;
 import java.util.concurrent.CancellationException;
 import kotlinx.coroutines.Job;
 
-/* JADX INFO: compiled from: r8-map-id-6bfc5c3105a4be2b3e0ed36dbd4f8244cea9222f352ced40fd941a9b8aa981c8 */
-/* JADX INFO: loaded from: classes.dex */
-public final /* synthetic */ class xh implements Runnable {
-    public final /* synthetic */ int a;
-    public final /* synthetic */ Object b;
-    public final /* synthetic */ int c;
-    public final /* synthetic */ Object d;
+ 
+ 
+public final   class xh implements Runnable {
+    public final   int a;
+    public final   Object b;
+    public final   int c;
+    public final   Object d;
 
-    public /* synthetic */ xh(Object obj, int i, Object obj2, int i2) {
+    public   xh(Object obj, int i, Object obj2, int i2) {
         this.a = i2;
         this.b = obj;
         this.c = i;
         this.d = obj2;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [androidx.camera.camera2.internal.Camera2CameraControlImpl$CaptureResultListener, v40] */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:593)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-     */
+     
+     
+     
     @Override // java.lang.Runnable
     public final void run() {
         int i = this.a;
@@ -87,7 +78,7 @@ public final /* synthetic */ class xh implements Runnable {
                     w40Var.a();
                     jx0.g("mRunningCompleter should be null when starting set a new exposure compensation value", w40Var.e == null);
                     jx0.g("mRunningCaptureResultListener should be null when starting set a new exposure compensation value", w40Var.f == null);
-                    ?? r1 = new Camera2CameraControlImpl$CaptureResultListener() { // from class: v40
+                    Camera2CameraControlImpl$CaptureResultListener r1 = new Camera2CameraControlImpl$CaptureResultListener() { // from class: v40
                         @Override // androidx.camera.camera2.internal.Camera2CameraControlImpl$CaptureResultListener
                         public final boolean onCaptureResult(TotalCaptureResult totalCaptureResult) {
                             Integer num = (Integer) totalCaptureResult.get(CaptureResult.CONTROL_AE_STATE);
@@ -122,7 +113,7 @@ public final /* synthetic */ class xh implements Runnable {
         }
     }
 
-    public /* synthetic */ xh(Object obj, Object obj2, int i, int i2) {
+    public   xh(Object obj, Object obj2, int i, int i2) {
         this.a = i2;
         this.b = obj;
         this.d = obj2;
