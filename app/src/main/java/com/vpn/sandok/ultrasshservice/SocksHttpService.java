@@ -96,7 +96,8 @@ public class SocksHttpService extends Service implements SkStatus.StateListener 
                 new Thread(new Runnable() { // from class: com.vpn.sandok.ultrasshservice.SocksHttpService.6.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        SocksHttpService.this.mTunnelManager;
+                        SocksHttpService.this.stopTunnel();
+                        SocksHttpService.this.startTunnel();
                     }
                 }).start();
             } else if (action.equals(SocksHttpService.TUNNEL_SSH_STOP_SERVICE)) {

@@ -150,7 +150,7 @@ public class VpnProfile implements Serializable, Cloneable {
         try {
             int i = Integer.parseInt(strArrSplit[1]);
             if (i >= 0 && i <= 32) {
-                long j = 4294967295 << (32 - i);
+                long j = 4294967295L << (32 - i);
                 Locale locale = Locale.ENGLISH;
                 StringBuilder sb = new StringBuilder();
                 sb.append((4278190080L & j) >> 24);

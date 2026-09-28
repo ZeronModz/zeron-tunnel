@@ -16,7 +16,7 @@ public class CIDRIP {
             i++;
             j >>= 1;
         }
-        if (j != (8589934591 >> i)) {
+        if (j != (8589934591L >> i)) {
             this.len = 32;
         } else {
             this.len = 32 - i;
@@ -30,7 +30,7 @@ public class CIDRIP {
 
     public boolean normalise() {
         long j = getInt(this.mIp);
-        long j2 = (4294967295 << (32 - this.len)) & j;
+        long j2 = (4294967295L << (32 - this.len)) & j;
         if (j2 == j) {
             return false;
         }

@@ -219,9 +219,11 @@ public abstract class l02 {
                 lowerCase.getClass();
                 if (lowerCase.length() != 0) {
                     int length = lowerCase.length();
-                    for (0; i2 < length; i2 + 1) {
+                    for (i2 = 0; i2 < length; i2++) {
                         char cCharAt = lowerCase.charAt(i2);
-                        i2 = (yg0.q(cCharAt, 31) > 0 && yg0.q(cCharAt, 127) < 0 && g.y(" #%/:?@[\\]", cCharAt, 0, 6) == -1) ? i2 + 1 : 0;
+                        if (!(yg0.q(cCharAt, 31) > 0 && yg0.q(cCharAt, 127) < 0 && g.y(" #%/:?@[\\]", cCharAt, 0, 6) == -1)) {
+                            return null;
+                        }
                     }
                     return lowerCase;
                 }
