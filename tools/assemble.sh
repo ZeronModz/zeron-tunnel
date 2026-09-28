@@ -141,6 +141,12 @@ s = s.replace("co.strongteam.ultra", "dev.zeron.tunnel")
 
 s = s.replace("application/x-ultra", "application/x-zeron")
 
+# redundant: already declared by the play-services-ads manifest
+for _n in ("com.google.android.gms.ads.AdActivity",
+           "com.google.android.gms.ads.OutOfContextTestingActivity"):
+    s = re.sub(r'[ \t]*<activity\b[^>]*?android:name="%s"[^>]*?(?:/>|>.*?</activity>)\n'
+               % re.escape(_n), "", s, flags=re.S)
+
 # AdMob app id -> google test id (no ad account needed)
 s = re.sub(r'(<meta-data\s+android:name="com\.google\.android\.gms\.ads\.APPLICATION_ID"\s+'
            r'android:value=")[^"]*(")',

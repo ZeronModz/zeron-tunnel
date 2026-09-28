@@ -103,12 +103,6 @@
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
-            android:theme="@android:style/Theme.Translucent"
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:exported="false"
-            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"
-            android:enableOnBackInvokedCallback="false"/>
-        <activity
             android:theme="@style/AppThemeDayNight.NoActionBar"
             android:name="com.v2ray.ang.Hometab"
             android:exported="true"
@@ -493,10 +487,6 @@
             android:name="com.google.android.gms.ads.AdService"
             android:enabled="true"
             android:exported="false"/>
-        <activity
-            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
-            android:exported="false"
-            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
         <activity
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:name="com.google.android.gms.ads.NotificationHandlerActivity"
