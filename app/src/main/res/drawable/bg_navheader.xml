@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:startColor="@color/scndcolor"
+        android:endColor="@color/card_mainLayoutColor"
+        android:angle="90"/>
+    <stroke
+        android:width="1dp"
+        android:color="@color/card_mainLayoutColor"/>
+    <corners
+        android:bottomLeftRadius="50dp"
+        android:bottomRightRadius="50dp"/>
+</shape>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/icon"
+            android:contentDescription="icon"/>
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join us on Telegram?"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="We have a Telegram support channel where we post and discuss about Settings, new Features, and also assist our Users. \10\10 Would you like to join us there?"/>
+</LinearLayout>

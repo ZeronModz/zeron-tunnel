@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_telegram_24dp"
+        android:id="@+id/share_tele"
+        android:title="Share on telegram"/>
+    <item
+        android:icon="@drawable/whatsapp"
+        android:id="@+id/share_whatsapp"
+        android:title="Share on WhatsApp"/>
+</menu>

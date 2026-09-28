@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_mymenu"
+        android:enabled="true"
+        android:id="@+id/a_update"
+        android:title="Update"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_telegram_24dp"
+        android:enabled="true"
+        android:id="@+id/a_tele"
+        android:title="Telegram"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_ios_message"
+        android:enabled="true"
+        android:id="@+id/a_live_chat"
+        android:title="Live Chat"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_exit"
+        android:enabled="true"
+        android:id="@+id/a_exit"
+        android:title="EXIT"
+        app:showAsAction="always"/>
+</menu>

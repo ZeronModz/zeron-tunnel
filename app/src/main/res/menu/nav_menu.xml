@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_logcat_24dp"
+        android:id="@+id/nav_updateNotes"
+        android:title="Update Notes"/>
+    <item
+        android:icon="@drawable/ic_telegram_24dp"
+        android:id="@+id/nav_jointele"
+        android:title="Join Telegram"/>
+    <item
+        android:icon="@drawable/ic_routing_24dp"
+        android:id="@+id/nav_serverStatus"
+        android:title="Server Status"/>
+    <item
+        android:icon="0x7f0800ff"
+        android:id="@+id/nav_v2raySettings"
+        android:title="V2ray Settings"/>
+    <item
+        android:icon="@drawable/ic_action_done"
+        android:id="@+id/nav_iphunt"
+        android:title="Ip Hunter"/>
+    <item
+        android:icon="@drawable/wireless"
+        android:id="@+id/nav_tethering"
+        android:title="Tethering"/>
+    <item
+        android:icon="@drawable/add_location"
+        android:id="@+id/nav_addserver"
+        android:title="Add Own Server"/>
+    <item
+        android:icon="@drawable/add_world"
+        android:id="@+id/nav_addtweak"
+        android:title="Add Own Tweaks"/>
+    <item
+        android:icon="@drawable/ic_qr"
+        android:id="@+id/nav_qr"
+        android:visible="false"
+        android:title="Use QR Code"
+        app:actionLayout="@layout/nav_switch_item"/>
+    <item
+        android:icon="@drawable/ic_logcat_24dp"
+        android:id="@+id/nav_clearData"
+        android:title="Clear App Data"/>
+    <item
+        android:icon="@drawable/ic_exit"
+        android:id="@+id/nav_exit"
+        android:title="Exit App"/>
+</menu>

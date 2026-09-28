@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_bottomdiaog"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:id="@+id/textAbove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Us"
+        android:shadowColor="@color/card_mainLayoutColor"
+        android:shadowDx="5"
+        android:shadowRadius="5"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textAbove">
+        <ImageView
+            android:id="@+id/imgTele"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/telegram"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imgWhatsApp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/whatsapp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imgFacebook"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/facebook"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

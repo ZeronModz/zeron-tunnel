@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:icon="@drawable/ic_qu_switch_24dp"
+        android:enabled="true"
+        android:shortcutId="shortcuts_switch"
+        android:shortcutShortLabel="@string/app_widget_name"
+        android:shortcutLongLabel="@string/app_widget_name"
+        android:shortcutDisabledMessage="@string/app_widget_name">
+        <intent
+            android:targetPackage="com.v2ray.ang"
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.v2ray.ang.ui.ScSwitchActivity"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:icon="@drawable/ic_qu_scan_24dp"
+        android:enabled="true"
+        android:shortcutId="shortcuts_scan"
+        android:shortcutShortLabel="@string/menu_item_import_config_qrcode"
+        android:shortcutLongLabel="@string/menu_item_import_config_qrcode"
+        android:shortcutDisabledMessage="@string/menu_item_import_config_qrcode">
+        <intent
+            android:targetPackage="com.v2ray.ang"
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.v2ray.ang.ui.ScScannerActivity"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

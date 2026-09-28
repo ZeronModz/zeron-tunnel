@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="allowinsecures">
+        <item />
+        <item>true</item>
+        <item>false</item>
+    </array>
+    <array name="core_loglevel">
+        <item>debug</item>
+        <item>info</item>
+        <item>warning</item>
+        <item>error</item>
+        <item>none</item>
+    </array>
+    <array name="flows">
+        <item />
+        <item>xtls-rprx-vision</item>
+        <item>xtls-rprx-vision-udp443</item>
+    </array>
+    <array name="fragment_packets">
+        <item>tlshello</item>
+        <item>1-2</item>
+        <item>1-3</item>
+        <item>1-5</item>
+    </array>
+    <array name="header_type_kcp_and_quic">
+        <item>none</item>
+        <item>srtp</item>
+        <item>utp</item>
+        <item>wechat-video</item>
+        <item>dtls</item>
+        <item>wireguard</item>
+        <item>dns</item>
+    </array>
+    <array name="header_type_tcp">
+        <item>none</item>
+        <item>http</item>
+    </array>
+    <array name="language_select">
+        <item>auto</item>
+        <item>English</item>
+        <item>中文简体</item>
+        <item>中文繁體</item>
+        <item>Tiếng Việt</item>
+        <item>Русский</item>
+        <item>فارسی</item>
+        <item>عربي</item>
+        <item>বাংলা</item>
+        <item>لۊری بختیاری</item>
+    </array>
+    <array name="language_select_value">
+        <item>auto</item>
+        <item>en</item>
+        <item>zh-rCN</item>
+        <item>zh-rTW</item>
+        <item>vi</item>
+        <item>ru</item>
+        <item>fa</item>
+        <item>ar</item>
+        <item>bn</item>
+        <item>bqi-rIR</item>
+    </array>
+    <array name="mode_entries">
+        <item>VPN</item>
+        <item>Proxy only</item>
+    </array>
+    <array name="mode_type_grpc">
+        <item>gun</item>
+        <item>multi</item>
+    </array>
+    <array name="mode_value">
+        <item>VPN</item>
+        <item>Proxy only</item>
+    </array>
+    <array name="mux_xudp_quic_entries">
+        <item>reject</item>
+        <item>allow</item>
+        <item>skip</item>
+    </array>
+    <array name="mux_xudp_quic_value">
+        <item>reject</item>
+        <item>allow</item>
+        <item>skip</item>
+    </array>
+    <array name="networks">
+        <item>tcp</item>
+        <item>kcp</item>
+        <item>ws</item>
+        <item>httpupgrade</item>
+        <item>xhttp</item>
+        <item>h2</item>
+        <item>grpc</item>
+    </array>
+    <array name="outbound_tag">
+        <item>proxy</item>
+        <item>direct</item>
+        <item>block</item>
+    </array>
+    <array name="preset_rulesets">
+        <item>China Whitelist</item>
+        <item>China Blacklist</item>
+        <item>Global</item>
+        <item>Iran Whitelist</item>
+    </array>
+    <array name="routing_domain_strategy">
+        <item>AsIs</item>
+        <item>IPIfNonMatch</item>
+        <item>IPOnDemand</item>
+    </array>
+    <array name="securitys">
+        <item>chacha20-poly1305</item>
+        <item>aes-128-gcm</item>
+        <item>auto</item>
+        <item>none</item>
+        <item>zero</item>
+    </array>
+    <array name="share_method">
+        <item>QRcode</item>
+        <item>Export to clipboard</item>
+        <item>Export full configuration to clipboard</item>
+    </array>
+    <array name="share_method_more">
+        <item>QRcode</item>
+        <item>Export to clipboard</item>
+        <item>Export full configuration to clipboard</item>
+        <item>Edit</item>
+        <item>Delete</item>
+    </array>
+    <array name="share_sub_method">
+        <item>QRcode</item>
+        <item>Export to clipboard</item>
+    </array>
+    <array name="ss_securitys">
+        <item>aes-256-gcm</item>
+        <item>aes-128-gcm</item>
+        <item>chacha20-poly1305</item>
+        <item>chacha20-ietf-poly1305</item>
+        <item>xchacha20-poly1305</item>
+        <item>xchacha20-ietf-poly1305</item>
+        <item>none</item>
+        <item>plain</item>
+        <item>2022-blake3-aes-128-gcm</item>
+        <item>2022-blake3-aes-256-gcm</item>
+        <item>2022-blake3-chacha20-poly1305</item>
+    </array>
+    <array name="streamsecurity_alpn">
+        <item />
+        <item>h3</item>
+        <item>h2</item>
+        <item>http/1.1</item>
+        <item>h3,h2,http/1.1</item>
+        <item>h3,h2</item>
+        <item>h2,http/1.1</item>
+    </array>
+    <array name="streamsecurity_utls">
+        <item />
+        <item>chrome</item>
+        <item>firefox</item>
+        <item>safari</item>
+        <item>ios</item>
+        <item>android</item>
+        <item>edge</item>
+        <item>360</item>
+        <item>qq</item>
+        <item>random</item>
+        <item>randomized</item>
+    </array>
+    <array name="streamsecuritys">
+        <item />
+        <item>tls</item>
+    </array>
+    <array name="streamsecurityxs">
+        <item />
+        <item>tls</item>
+        <item>reality</item>
+    </array>
+    <array name="ui_mode_night">
+        <item>Follow system</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </array>
+    <array name="ui_mode_night_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="vpn_bypass_lan">
+        <item>Follow config</item>
+        <item>Bypass</item>
+        <item>Not Bypass</item>
+    </array>
+    <array name="vpn_bypass_lan_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="xhttp_mode">
+        <item>auto</item>
+        <item>packet-up</item>
+        <item>stream-up</item>
+        <item>stream-one</item>
+    </array>
+</resources>

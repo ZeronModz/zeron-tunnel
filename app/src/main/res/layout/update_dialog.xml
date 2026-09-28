@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_options"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Update Resources"
+        android:shadowColor="@color/card_mainLayoutColor"
+        android:shadowDx="5"
+        android:shadowRadius="5"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+    <TextView
+        android:typeface="serif"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        android:text="1.) Online Update - requires internet connection.\10\102.) Clear Data - Clearing all settings."/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+        <com.google.android.material.button.MaterialButton
+            android:textColor="@color/textColor"
+            android:id="@+id/btnOnlineUpdate"
+            android:background="@drawable/btn_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Update"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:backgroundTint="@null"/>
+        <com.google.android.material.button.MaterialButton
+            android:textColor="@color/textColor"
+            android:id="@+id/btnCleardata"
+            android:background="@drawable/btn_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Data"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+</LinearLayout>

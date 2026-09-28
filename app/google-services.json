@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "79764409302",
+    "firebase_url": "https://zerontoolsbata-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "zerontoolsbata",
+    "storage_bucket": "zerontoolsbata.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79764409302:android:0b82dfca19320b6be7f277",
+        "android_client_info": {
+          "package_name": "dev.zeron.tunnel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMl-T8g6vR6J7179jRq5_B8w70NBw3pjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79764409302-fs12v0nk1gg1u3hi26sn75jm0jhtj20n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

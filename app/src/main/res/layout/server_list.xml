@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottomnav"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/topLinear"
+        android:background="@drawable/bg_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/svServer"
+            android:background="@drawable/search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search Server"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNetwork"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/frameBot"
+        android:layout_below="@+id/topLinear"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+    <FrameLayout
+        android:id="@+id/frameBot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
