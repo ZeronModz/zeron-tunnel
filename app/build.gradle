@@ -207,7 +207,7 @@ dependencies {
     implementation 'com.google.android.ump:user-messaging-platform:3.2.0'
     implementation 'com.google.android.play:app-update:2.1.0'
     implementation 'com.google.android.play:app-update-ktx:2.1.0'
-    implementation 'com.google.android:flexbox:3.0.0'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
     implementation 'com.google.code.gson:gson:2.11.0'
     implementation 'com.google.errorprone:error_prone_annotations:2.36.0'
     implementation 'com.google.guava:guava:33.4.0-android'
