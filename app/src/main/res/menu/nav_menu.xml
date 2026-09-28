@@ -13,7 +13,7 @@
         android:id="@+id/nav_serverStatus"
         android:title="Server Status"/>
     <item
-        android:icon="0x7f0800ff"
+        android:icon="@drawable/ic_settings_24dp"
         android:id="@+id/nav_v2raySettings"
         android:title="V2ray Settings"/>
     <item
