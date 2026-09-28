@@ -100,6 +100,9 @@ mkdir -p "$OUT" "$OUT/assets"
 tar cf - -C "$RES_DIR" res | tar xf - -C "$OUT"
 tar cf - -C "$RES_DIR" assets | tar xf - -C "$OUT"
 
+# jadx public.xml pins fixed ids -> conflicts with library resources
+rm -f "$OUT/res/values/public.xml"
+
 # drop google-services generated values (plugin regenerates them)
 if [ -f "$OUT/res/values/strings.xml" ]; then
   python3 - "$OUT/res/values/strings.xml" <<'PY'
@@ -128,6 +131,10 @@ for attr in ["package", "versionCode", "versionName", "compileSdkVersion",
              "compileSdkVersionCodename", "platformBuildVersionCode",
              "platformBuildVersionName", "requiredSplitTypes", "splitTypes"]:
     s = re.sub(r'\s*android:%s="[^"]*"' % attr, '', s)
+    s = re.sub(r'\s*%s="[^"]*"' % attr, '', s)
+
+# <uses-sdk> is supplied by the gradle module
+s = re.sub(r'<uses-sdk\b[^>]*/>', '', s)
 
 # package rename (authorities, permissions, component names)
 s = s.replace("co.strongteam.ultra", "dev.zeron.tunnel")

@@ -40,6 +40,14 @@ jobs:
         with:
           gradle-version: '8.11.1'
 
+      - name: Diagnose resources + manifest (verbose)
+        shell: bash
+        run: |
+          set +e
+          gradle :app:mergeDebugResources --info 2>&1 | grep -aE "error:|Error:|Duplicate|duplicate|Can not add|AAPT2|is not a valid" | head -80
+          echo "=========== MANIFEST ==========="
+          gradle :app:processDebugMainManifest --info 2>&1 | grep -aE "Attribute |merger failed|Suggestion:|tools:|Error:|error:" | head -80
+
       - name: Build debug APK
         run: gradle :app:assembleDebug --stacktrace --warning-mode all
 

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.zeron.tunnel"
-    platformBuildVersionCode="36"
-    platformBuildVersionName="16">
-    <uses-sdk
-        android:minSdkVersion="32"
-        android:targetSdkVersion="36"/>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    
     <supports-screens
         android:anyDensity="true"
         android:smallScreens="true"
